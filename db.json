@@ -1,58 +1,5 @@
 {
   "users": [
-    {
-      "id": "3e18",
-      "username": "demo3",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "03c4",
-      "username": "aaattt",
-      "password": "123456",
-      "email": "noxe.kinz@gmail.com"
-    },
-    {
-      "id": "5c05",
-      "username": "aaattt11",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "574e",
-      "username": "aaattt1111",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "aa1a",
-      "username": "aaattt11115",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "55e9",
-      "username": "aaattt112",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "7e77",
-      "username": "chankan",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "e944",
-      "username": "chankan2",
-      "password": "123456",
-      "email": "www.viet712@gmail.com"
-    },
-    {
-      "id": "b48f",
-      "username": "demo1",
-      "password": "626458",
-      "email": "noxe.kinz@gmail.com"
-    }
+    { "id": "123abc", "username": "user1", "password": "pass1", "email": "user1@example.com" }
   ]
 }

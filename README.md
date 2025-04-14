@@ -1,59 +1,35 @@
-# AngularProject
+Mô tả Dự án 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
-## Development server
+ Công nghệ
+- Frontend: Angular 
+- Database: json-server 
+- Giao diện: CSS tùy chỉnh 
 
-To start a local development server, run:
+ Tính năng
+- Đăng nhập và đăng xuất.
+- Xem danh sách người dùng.
+- Thêm, sửa, xóa người dùng.
+- Thanh header cố định với các liên kết điều hướng.
+- Kiểm tra dữ liệu nhập với thông báo lỗi.
 
-```bash
-ng serve
-```
+Cách chạy
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. Cài đặt:
+   - Cài Node.js và Angular CLI: `npm install -g @angular/cli`.
+   - Cài json-server: `npm install -g json-server`.
+   - Clone dự án và cài đặt: `npm install`.
 
-## Code scaffolding
+2. Khởi động database:
+   - File `db.json` với dữ liệu mẫu có thể chỉnh sửa :
+     "{
+       "users": [
+         { "id": "123abc", "username": "user1", "password": "pass1", "email": "user1@example.com" }
+       ]
+     }"
+   - Chạy: `json-server --watch db.json`.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. Chạy ứng dụng:
+   - Chạy: `ng serve`.
+   - Truy cập: `http://localhost:4200`.
+   - Đăng nhập với tài khoản: `user1/pass1`.
