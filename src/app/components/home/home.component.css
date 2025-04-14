@@ -1,0 +1,89 @@
+
+  .align {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 24rem; 
+  }
+  
+
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+  }
+  
+  body {
+    background: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+  }
+  
+  p {
+    margin-block: 0.5rem;
+  }
+  
+  .text--center {
+    text-align: center;
+  }
+  
+  .content {
+    margin-bottom: 1.5rem;
+  }
+  
+  .welcome-message {
+    font-size: 1rem;
+    color: #d3d3d3; 
+  }
+  
+  .action-button {
+    margin-top: 1rem;
+  }
+  
+  .action-button button {
+    background-color:var(--buttonColor) ; 
+    color: #fff;
+    border: none;
+    border-radius: var(--borderRadius);
+    padding: 0.75rem;
+    inline-size: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-button button:hover {
+    background-color: var(--buttonHoverColor); 
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .icon-home {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+  }
+  

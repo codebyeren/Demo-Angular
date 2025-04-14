@@ -1,0 +1,23 @@
+<body class="align">
+    <div class="grid">
+      <div class="header">
+        <svg class="icon icon-home" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
+        <h2>Welcome to Home</h2>
+      </div>
+  
+      <div class="content text--center">
+        <p *ngIf="username" class="welcome-message">
+          Welcome, {{ username }}! You are logged in.
+        </p>
+        <p *ngIf="!username" class="welcome-message">
+          Welcome! You are logged in.
+        </p>
+        <div class="action-button">
+          <button (click)="navigateToUsers()">Go to User List</button>
+        </div>
+      </div>
+  
+    </div>
+  </body>

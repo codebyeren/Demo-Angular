@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+:root {
+    --baseColor: #fff; /* Màu chữ trắng */
+  }
+  
+  /* helpers/align.css */
+  .align {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+  /* layout/base.css */
+  :root {
+    --htmlFontSize: 100%;
+    --bodyBackgroundColor: linear-gradient(to right, #00bcd4, #9b59b6); 
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 1rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+  }
+  /* modules/login.css */
+:root {
+    --borderRadius: 0.5rem;
+    --loginColor: #fff;
+    --buttonColor: #00bcd4; 
+    --loginSubmitColor: #fff;
+    --buttonHoverColor: #00acc1; 
+  }
+  :root {
+    --formGap: 1rem; 
+    --errorColor : rgb(247, 49, 49);
+    --highlightColor : #ebffa2;
+
+  }
+input{
+    border-radius: 25px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

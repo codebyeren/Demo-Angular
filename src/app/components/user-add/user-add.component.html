@@ -1,0 +1,72 @@
+<body class="align">
+    <div class="grid">
+      <div class="header">
+        <svg class="icon icon-add" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+        </svg>
+        <h2>Add User</h2>
+      </div>
+  
+      <form #userForm="ngForm" (ngSubmit)="userForm.valid && onAdd()" class="form formInput">
+        <div class="form__field">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            class="form__input"
+            [(ngModel)]="user.username"
+            name="username"
+            required
+            #usernameInput="ngModel"
+            [class.is-invalid]="usernameInput.invalid && (usernameInput.touched || usernameInput.dirty)"
+          >
+          <div *ngIf="usernameInput.invalid && (usernameInput.touched || usernameInput.dirty)" class="invalid-feedback">
+            Username is required.
+          </div>
+        </div>
+  
+        <div class="form__field">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="form__input"
+            [(ngModel)]="user.password"
+            name="password"
+            required
+            #passwordInput="ngModel"
+            [class.is-invalid]="passwordInput.invalid && (passwordInput.touched || passwordInput.dirty)"
+          >
+          <div *ngIf="passwordInput.invalid && (passwordInput.touched || passwordInput.dirty)" class="invalid-feedback">
+            Password is required.
+          </div>
+        </div>
+  
+        <div class="form__field">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="form__input"
+            [(ngModel)]="user.email"
+            name="email"
+            required
+            #emailInput="ngModel"
+            [class.is-invalid]="emailInput.invalid && (emailInput.touched || emailInput.dirty)"
+          >
+          <div *ngIf="emailInput.invalid && (emailInput.touched || emailInput.dirty)" class="invalid-feedback">
+            Email is required.
+          </div>
+        </div>
+  
+        <div class="form__field">
+          <input type="submit" value="ADD" [disabled]="userForm.invalid" />
+        </div>
+        <div class="form__field">
+          <input type="button" value="Back" class="secondary-button" (click)="goBack()" />
+        </div>
+      </form>
+  
+      <p *ngIf="errorMessage" class="text--center text-danger">{{ errorMessage }}</p>
+    </div>
+  </body>
